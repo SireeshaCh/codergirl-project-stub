@@ -16,24 +16,6 @@ the folder where you want your project to appear.
 
      `git clone git@github.com:yourusername/codergirl-project-stub.git`
 
-6. Then launch Eclipse.
-7. From the File menu, Import, then "Existing project into workspace".
-8. Navigate to your codergirl-project-stub project folder and click Open.
-
-## So, what's in this project?
-
-`src/main/java` - contains the Java code
-
-`src/main/resources` - contains properties files when needed
-
-`test/main/java` - contains the jetty Start application for local testing, and may contain unit tests.
-
-`src/main/webapp/` - contains html content and jsps, plus the `WEB-INF/web.xml` file
-
-`target/` - contains compiled code (excluded from git)
-
-`pom.xml` - maven configuration file that controls what library dependencies are included
-
 
 ## How do I rename this project to something like web-pet-store?
 
@@ -76,8 +58,9 @@ should go away.
 This contains some commands for you to run (but you've already done some of them).  Look for the one with `git remote add origin`
 and copy-paste that into git bash to run it.  It's already customized with your project name.
 11. Type and run: `git push -u origin master`
-12. Refresh the page in your web browser and you should be able to see your code.
-13. Go back to Eclipse and right-click the project, choose Refresh, and the icons should change to indicate git success.
+12. Type and run: `git push --set-upstream origin master`
+13. Refresh the page in your web browser and you should be able to see your code.
+14. Go back to Eclipse and right-click the project, choose Refresh, and the icons should change to indicate git success.
 
 You're done!  You now have an empty project with your preferred name.
 
@@ -118,4 +101,18 @@ Periodically, as you finish a feature, you will want to save your progress:
      git status
      git commit -m "Added feature blah blah blah" 
      git push
+
+## So, what's in this project?
+
+`src/main/java` - contains the Java code
+
+`src/main/resources` - contains properties files when needed
+
+`test/main/java` - contains the jetty Start application for local testing, and may contain unit tests.
+
+`src/main/webapp/` - contains html content and jsps, plus the `WEB-INF/web.xml` file
+
+`target/` - contains compiled code (excluded from git)
+
+`pom.xml` - maven configuration file that controls what library dependencies are included
 
