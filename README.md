@@ -11,7 +11,7 @@ Look for the Fork button in the upper right of the web page.
 next to a URL, with a "Copy to Clipboard" button next to it.
 3. Push "Copy to Clipboard"
 4. In a terminal window (mac) or git-bash (windows), `cd` to
-the folder where you want your project to appear.
+change directory to the folder where you want your project to appear.
 5. Then run git clone (paste) (Notice your username in that address - not mine!) :
 
      `git clone git@github.com:yourusername/codergirl-project-stub.git`
@@ -25,11 +25,11 @@ do it?
 
 ### Step 1: Renaming
 1. Exit Eclipse.  You don't want this open while you fix things.
-2. Navigate to the folder codergirl-project-stub using the folder explorer (windows) or finder (mac).
+2. Navigate to the folder `codergirl-project-stub` using the folder explorer (windows) or finder (mac).
 3. Delete the .git directory - this will make it "forget" the history of the project and disconnect
 it from github.
 4. Rename the codergirl-project-stub directory to your project name.
-5. Use a text editor (sublime, wordpad, whatever) to modify the `.project` file and the `pom.xml` files,
+5. Use a text editor (sublime, wordpad, whatever) to modify the `.project` file and the `pom.xml` file,
 to change the name inside there.  The names appear multiple times in each file; any place you see `codergirl-project-stub` you
 should replace that with your project name. Save your changes.
 6. Open the `.settings/org.eclipse.wst.common.component` file and change the name in there. Save your changes.
