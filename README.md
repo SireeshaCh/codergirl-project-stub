@@ -30,7 +30,8 @@ do it?
 it from github.
 4. Rename the codergirl-project-stub directory to your project name.
 5. Use a text editor (sublime, wordpad, whatever) to modify the `.project` file and the `pom.xml` files,
-to change the name inside there.  The names appear multiple times in each file. Save your changes.
+to change the name inside there.  The names appear multiple times in each file; any place you see `codergirl-project-stub` you
+should replace that with your project name. Save your changes.
 6. Open the `.settings/org.eclipse.wst.common.component` file and change the name in there. Save your changes.
 7. Get a command prompt (terminal on mac, git-bash on windows) and change directory into your project dir.
 8. Type: `mvn package` and make sure it succeeds at compiling.
