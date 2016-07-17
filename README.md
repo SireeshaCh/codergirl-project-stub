@@ -34,7 +34,8 @@ to change the name inside there.  The names appear multiple times in each file; 
 should replace that with your project name. Save your changes.
 6. Open the `.settings/org.eclipse.wst.common.component` file and change the name in there. Save your changes.
 7. Get a command prompt (terminal on mac, git-bash on windows) and change directory into your project dir.
-8. Type: `mvn package` and make sure it succeeds at compiling.
+8. Type: `mvn package` and make sure it succeeds at compiling.  If you get `mvn: Command not found` then skip
+this step; you'll check it later in Eclipse instead.
 
 ### Step 2: Eclipse Import
 
@@ -43,6 +44,20 @@ should replace that with your project name. Save your changes.
 recognize the project and have a checkbox next to it in the white dialog box in the middle of the wizard.
 3. Tell it ok, and your project should be listed on the left in Eclipse; after a minute, any compile errors
 should go away.
+4. Spin open the project in the left window of Eclipse (click the triangle).  Find the pom.xml file.
+Click it just one to select it.  Then right-click it, go to Run As, Maven Build, and in the "Goal" box type
+the word `package` and then hit okay.  You should see a bunch of stuff scroll past, ending with:
+
+    [INFO] ------------------------------------------------------------------------
+    [INFO] BUILD SUCCESS
+    [INFO] ------------------------------------------------------------------------
+    [INFO] Total time: 2.855 s
+    [INFO] Finished at: 2016-07-17T16:34:22-05:00
+    [INFO] Final Memory: 19M/191M
+    [INFO] ------------------------------------------------------------------------
+
+That means all the code is currently compiling properly.
+
 
 ### Step 3: Back to Github with a new name
 
